@@ -21,7 +21,7 @@ body {
 
 /* Header Styles */
 .main-header {
-    background-color: #0066cc;
+    background-color: #205183;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -50,7 +50,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 12px;
+    padding: 8px 8px;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
@@ -60,12 +60,16 @@ body {
 }
 
 .register-link {
-    background-color: #ff9900;
+    background-color: #ffffff; /* Blue background */
+    color: rgb(89, 142, 255) !important; /* White text */
+    padding: 10px 20px;
+    border-radius: 30px; /* Rounded borders */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #205183; /* Matching border */
 }
 
-.register-link:hover {
-    background-color: #e68a00;
-}
+
 
 /* Hero Section */
 .hero-section {
