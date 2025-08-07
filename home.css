@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -247,41 +247,89 @@ section:last-child {
 }
 
 /* Teaching Section */
+/* Teaching Section */
 .teaching-section {
-    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.teaching-hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/home-hands-on-teaching.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.teaching-overlay {
+    background: rgba(0, 0, 0, 0.4); /* optional: for better contrast */
+    width: 100%;
     padding: 60px 20px;
 }
 
-/* Teaching Section Image Fix */
-.teaching-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    overflow: hidden; /* Prevents any child elements from overflowing */
+.teaching-content {
+    max-width: 700px;
+    color: white;
+    padding: 20px;
 }
 
-.image-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-radius: 8px;
-    overflow: hidden; /* Ensures the image stays within the container */
+.teaching-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+.teaching-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
-/* For larger screens, you can control the height */
-@media (min-width: 768px) {
-    .image-container {
-        max-height: 500px; /* Adjust as needed */
+.programs-offered h3 {
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+.programs-offered ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.register-cta {
+    margin-top: 30px;
+}
+
+.register-btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teaching-content {
+        max-width: 100%;
+        text-align: left;
     }
 }
+
+
 /* Programs Section */
 .programs-section {
     text-align: center;
@@ -492,10 +540,5 @@ section:last-child {
     .job-opportunities {
         padding: 25px 15px;
     }
-    
-    .teaching-section,
-    .programs-section,
-    .cta-section {
-        padding: 40px 15px;
-    }
 }
+
