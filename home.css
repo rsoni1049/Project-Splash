@@ -252,41 +252,36 @@ section:last-child {
     padding: 60px 20px;
 }
 
-.teaching-section h2 {
-    color: #0066cc;
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+/* Teaching Section Image Fix */
+.teaching-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    overflow: hidden; /* Prevents any child elements from overflowing */
 }
 
-.teaching-section p {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #444;
-}
-
-.teaching-images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 50px 0;
-}
-
-.teaching-images img {
+.image-container {
     width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image stays within the container */
 }
 
-.teaching-images img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
+/* For larger screens, you can control the height */
+@media (min-width: 768px) {
+    .image-container {
+        max-height: 500px; /* Adjust as needed */
+    }
+}
 /* Programs Section */
 .programs-section {
     text-align: center;
