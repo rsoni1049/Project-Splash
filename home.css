@@ -782,27 +782,28 @@ section:last-child {
 /* Footer */
 
 .custom-footer {
-  padding-top: 20px; /* Reduced from 40px */
-  padding-bottom: 20px; /* Reduced from 40px */
-  background: url('images/footer-bg-overlay.jpeg') no-repeat center center;
- 
-  
+  position: relative;
+
+  background-size: cover;
+  color: white;
+  padding: 60px 0 30px;
+  font-family: Arial, sans-serif;
 }
 
+.custom-footer
+{
+      background: url('images/footer-bg-overlay.jpeg') no-repeat center center;
+       padding-top: 200px; 
 
+}
 .footer-content-overlay {
   position: relative;
   z-index: 2;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  flex: 1; /* Takes all available space */
-  display: flex;
-  flex-direction: column;
 }
 
-/* Dark overlay for better readability */
 .custom-footer::before {
   content: '';
   position: absolute;
@@ -810,33 +811,97 @@ section:last-child {
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Content distribution */
+/* Header section */
 .footer-top {
-  margin-bottom: auto; /* Pushes content down */
-  margin-top: 1%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
-
-/* Rest of your original styles remain exactly the same */
 .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 25px;
-  margin-top: 30%;
+  gap: 15px; /* Reduced from 20px for tighter nav links */
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.footer-social-icons {
+  gap: 25px; /* Social media icon spacing */
+  margin-left: 40px; /* Space between nav and social icons */
+}
+
+.footer-social-icons a {
+  color: white;
+  font-size: 24px;
+}
+
+/* Contact section */
+hr {
+  margin: 20px 0; /* Adjust line spacing */
+}
+
+.footer-contacts {
+  text-align: center;
+  margin: 30px 0;
 }
 
 .county-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
+.county-space, 
+.county-number2, 
+.county-number3,
+.county-number4,
+.county-number5 {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+}
 
+/* Partners section */
+.footer-partners {
+  margin-top: 30px; /* Space above partner logos */
+}
 
-/* ... all other existing CSS rules ... */
+.footer-partners img {
+  margin: 0 15px 15px 15px; /* Logo spacing */
+}
 
-/* All other CSS rules remain unchanged from your original */
+.footer-partners span {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .county-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .county-space, 
+  .county-number2, 
+  .county-number3,
+  .county-number4,
+  .county-number5 {
+    margin-bottom: 10px;
+  }
+}
