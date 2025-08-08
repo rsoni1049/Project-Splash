@@ -741,9 +741,8 @@ section:last-child {
 }
 
 .social-icons {
- display: flex;
-  gap: 35px; /* Increased gap size (was 20px) */
-  margin-left: 30px; /* More space between nav links and social icons */
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons a {
@@ -811,14 +810,13 @@ section:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 /* Content distribution */
 .footer-top {
   margin-bottom: auto; /* Pushes content down */
-
+  margin-top: 1%;
 }
 
 
