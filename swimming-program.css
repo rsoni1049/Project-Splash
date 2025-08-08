@@ -1,0 +1,106 @@
+.summer-swim-camps {
+  background-color: #f5f9fc;
+  padding: 60px 0;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+}
+
+.summer-swim-camps .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.summer-swim-camps h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.summer-swim-camps h1 span {
+  display: block;
+  font-size: 2rem;
+}
+
+.camp-description {
+  margin-bottom: 40px;
+}
+
+.camp-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Updated CSS to left-align the locations */
+.locations-section {
+  text-align: left; /* Changed from center to left */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.locations-grid {
+  display: block; /* Changed from grid to block */
+}
+
+.locations-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: fit-content;
+}
+
+.locations-list li {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.locations-list a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Keep existing hover effects */
+.locations-list li:hover {
+  transform: translateX(5px);
+}
+
+.locations-list a:hover {
+  color: #004499;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .locations-list {
+    width: 100%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .summer-swim-camps h1 {
+    font-size: 2rem;
+  }
+  
+  .summer-swim-camps h1 span {
+    font-size: 1.5rem;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
