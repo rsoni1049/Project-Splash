@@ -653,3 +653,217 @@ section:last-child {
         grid-template-columns: 1fr;
     }
 }
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0066cc;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Optional: make nav links wrap on smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+}
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-background {
+    background-image: url('images/footer-bg-overlay.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+    justify-content: space-between;
+}
+
+.contact-column p {
+    margin: 4px 0;
+}
+
+.affiliations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.register-btn {
+    margin-left: auto;
+    background-color: #ff9900;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.custom-footer {
+  position: relative;
+  background: url('images/footer-bg-overlay.jpeg') no-repeat center center;
+   opacity: 1;
+  background-size: cover;
+  color: white; /* Set text color to contrast with image */
+  padding: 30px 0; /* Adjust as needed */
+  opacity: 100;
+}
+
+.footer-content-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin-top: 20%;
+  padding: 0 10px;
+}
+
+/* Optional overlay to improve text readability */
+.custom-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+/* Rest of your existing footer styles */
+.footer-bottom {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.footer-bottom .slogan {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin: 20px 0; /* Reduced from 90px */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 20px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+}
+
+.space-footer
+{
+    margin-left: 40%;
+}
+.county-space
+{
+    margin-left: 6%;
+   
+}
+.county-row
+{
+    margin-left: 10%
+}
+.county-number2
+{
+    margin-left: 6%;
+}
+.county-number3
+{
+    margin-left: 8%;
+}
+.county-number4
+{
+    margin-left: 9%;
+}
+.county-number5
+{
+    margin-left: 8%;
+}
+.footer-social-icons a {
+  font-size: 1.2rem; /* You can increase to 1.3rem or 1.5rem if needed */
+}
