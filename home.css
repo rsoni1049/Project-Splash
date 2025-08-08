@@ -822,7 +822,7 @@ section:last-child {
 }
 
 .footer-nav {
-  gap: 15px; /* Reduced from 20px for tighter nav links */
+  gap: 25px; /* Reduced from 20px for tighter nav links */
 }
 
 .footer-nav a {
@@ -834,7 +834,7 @@ section:last-child {
 }
 
 .footer-social-icons {
-  gap: 25px; /* Social media icon spacing */
+  gap: 30px; /* Social media icon spacing */
   margin-left: 40px; /* Space between nav and social icons */
 }
 
@@ -871,7 +871,8 @@ hr {
 
 /* Partners section */
 .footer-partners {
-  margin-top: 30px; /* Space above partner logos */
+  margin-top: 30px;
+  gap: 10%; /* Space above partner logos */
 }
 
 .footer-partners img {
@@ -904,4 +905,25 @@ hr {
   .county-number5 {
     margin-bottom: 10px;
   }
+}
+.space-footer {
+  margin-left: 60px; /* Increased from 40px for more space before social icons */
+}
+
+.footer-social-icon-gap
+{
+    margin-left: 40px; /* Increased from 15px for more space between icons */
+}
+.footer-location
+{
+    margin-left: 30px; /* Increased from 20px for more space between links */
+}
+.footer-bottom
+{
+    padding-top: 5%;
+    margin-left: 40%;
+}
+.footer-logo-1
+{
+   gap: 10px; /* Increased from 0 for more space before first logo */
 }
