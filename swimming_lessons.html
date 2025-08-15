@@ -1,155 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splashes Swim School</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="swimming_lesson.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Splashes Swim School</title>
 
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="swimming_lesson.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="main-container">
-        <!-- Header Section -->
-        <header class="main-header">
-            <div class="logo-container">
-                <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo">
-                <nav class="main-nav">
-                    <ul>
- <li><a href="/home.html">About</a></li>
-            <li><a href="/swimming_lessons.html">Swimming Lessons</a></li>
-            <li><a href="/swimming_programs.html">Swimming Programs</a></li>
-            <li><a href="/adult_programe.html">Adult Programs</a></li>
+  <div class="main-container">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo" />
+        <nav class="main-nav">
+          <ul>
+            <li><a href="home.html">About</a></li>
+            <li><a href="swimming_lessons.html">Swimming Lessons</a></li>
+            <li><a href="swimming_programs.html">Swimming Programs</a></li>
+            <li><a href="adult_programe.html">Adult Programs</a></li>
             <li><a href="locations.html">Locations</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register/Sign In</a></li>
-                    </ul>
-                </nav>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="images/which-lesson-is-best.jpeg" alt="Children learning to swim with instructor" />
+      <div class="hero-content">
+        <h1>Which Lesson is Best?</h1>
+      </div>
+    </section>
+
+    <!-- Lesson Types Section -->
+    <section class="lesson-types">
+      <div class="container">
+        <h2>Our Lesson Types</h2>
+
+        <div class="lesson-block">
+          <h3>Private Swim Lessons</h3>
+          <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning...</p>
+          <a href="#">Learn more here</a>
+        </div>
+
+        <div class="lesson-block">
+          <h3>Semi-Private Swim Lessons</h3>
+          <p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity to interact with another student of a similar age and ability while still receiving personal attention.</p>
+        </div>
+
+        <hr />
+
+        <div class="lesson-block">
+          <p>Whether you would like to pair your child with another student... <a href="#">Learn more here</a></p>
+        </div>
+
+        <div class="lesson-block">
+          <h3>Parent & Me Lessons</h3>
+          <p>Our <a href="#">Parent and Me experience lessons</a>... <a href="#">Learn more here</a></p>
+        </div>
+
+        <div class="lesson-block">
+          <h3>Stroke Clinic</h3>
+          <p>Splashes’s <a href="#">Stroke Clinic</a> gives students the opportunity to advance their swimming technique... <a href="#">Learn more here</a></p>
+        </div>
+
+        <div class="lesson-block">
+          <h3>Adult Swim Lessons</h3>
+          <p>It’s never too late to learn how to swim! Whether you are looking to learn the basics or improve your technique... <a href="#">Learn more here</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register / Sign In Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register / Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="authTabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="signin-tab" data-toggle="tab" href="#signin" role="tab">Sign In</a>
+              </li>
+            </ul>
+            <div class="tab-content mt-3">
+              <div class="tab-pane fade show active" id="register" role="tabpanel">
+                <form>
+                  <input type="text" placeholder="Full Name" class="form-control mb-2" required />
+                  <input type="email" placeholder="Email" class="form-control mb-2" required />
+                  <input type="password" placeholder="Password" class="form-control mb-2" required />
+                  <input type="password" placeholder="Confirm Password" class="form-control mb-3" required />
+                  <button class="btn btn-primary btn-block">Register</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="signin" role="tabpanel">
+                <form>
+                  <input type="email" placeholder="Email" class="form-control mb-2" required />
+                  <input type="password" placeholder="Password" class="form-control mb-3" required />
+                  <button class="btn btn-success btn-block">Sign In</button>
+                </form>
+              </div>
             </div>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <img src="images/which-lesson-is-best.jpeg" alt="Children learning to swim with instructor">
-            <div class="hero-content">
-                <h1>Which Lesson is Best?</span></h1>
-            </div>
-        </section>
-        <section class="lesson-types">
-  <div class="container">
-    <h2>Our Lesson Types</h2>
-
-    <div class="lesson-block">
-      <h3>Private Swim Lessons</h3>
-      <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning. Each lesson will allow our instructors to build on the momentum and skills taught in the previous lesson with minimal downtime. From the basics of putting your face in the water to refining your stroke technique, private lessons will offer the highest rate of progress.</p>
-      <a href="#">Learn more here</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="lesson-block">
-      <h3>Semi-Private Swim Lessons</h3>
-      <p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity to interact with another student of a similar age and ability while still receiving personal attention.</p>
-    </div>
-
-    <hr>
-
-    <div class="lesson-block">
-      <p>Whether you would like to set up a pair child with another student of similar age and ability or would like to take lessons with a friend or sibling, our semi-private lessons are a cost-effective option. Students also have the opportunity to observe one another in the lesson.</p>
-      <a href="#">Learn more here</a>
-    </div>
-
-    <div class="lesson-block">
-      <h3>Parent & Me Lessons</h3>
-      <p>Our <a href="#">Parent and Me experience lessons</a> follow known as “Mommy and Me” or “Daddy and Me” classes give parents the opportunity to be hands-on with their little one while our instructors facilitate the learning process between you and your child. These classes provide a fun and relaxed environment for you and your child to master age-appropriate swimming milestones.</p>
-      <p>In our <a href="#">Parent and Me swim lessons</a>, we encourage children ages 3 months through 3 years to participate in water activities alongside a parent. In some programs, we encourage children ages 2.5 and older to participate in parent or private swim lessons.</p>
-      <a href="#">Learn more here</a>
-    </div>
-
-    <div class="lesson-block">
-      <h3>Stroke Clinic</h3>
-      <p>Splashes’s <a href="#">Stroke Clinic</a> gives students the opportunity to advance their swimming technique while in a group setting. Our Stroke Clinic classes place emphasis on proper technique over speed and are available for students ages 7 and up.</p>
-      <p>This <a href="#">stroke clinic</a> is strongly encouraged for children who have either been participating in swim lessons or have previously done stroke foundation level swim courses that student progress must reach. From advanced stroke mechanics to kick work and endurance swim exercises, our stroke clinic serves developing and elite level parent, where individual feedback is a great motivator.</p>
-    </div>
-
-    <div class="lesson-block">
-      <h3>Adult Swim Lessons</h3>
-      <p>It’s never too late to learn how to swim! Whether you are looking to learn the basics or improve your technique, we welcome students at all forms of comfort, and a secure instructor will tailor each lesson to your learning abilities. At Splashes, our adult swim lessons make it fun and easy to learn the fundamentals. All students, ages 16+ are welcome in our adult swim program.</p>
-      <p>From beginners to advanced, our <a href="#">adult swim lessons</a> are a great option for those looking to overcome their fear of the water or who are looking to become stronger swimmers.</p>
-      <a href="#">Learn more here</a>
-    </div>
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="footer-content-overlay">
+        <div class="footer-top">
+          <div class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Location</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+            <a href="#" data-toggle="modal" data-target="#authModal">Register/Sign In</a>
+            <a href="#">Career</a>
+            <span class="space-footer"></span>
+            <span class="footer-social-icons">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-yelp"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </span>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-contacts">
+          <div class="county-row">
+            <span class="county-space">Orange County</span>
+            <span class="county-space">San Diego County</span>
+            <span class="county-space">Los Angeles County</span>
+            <span class="county-space">Northern California</span>
+            <span class="county-space">Denver</span>
+          </div>
+          <div class="county-row">
+            <span class="county-space">(949) 450-0777</span>
+            <span class="county-number2">(760) 603-9400</span>
+            <span class="county-number3">(626) 836-1200</span>
+            <span class="county-number4">(408) 279-1700</span>
+            <span class="county-number5">(720) 344-7700</span>
+          </div>
+        </div>
+        <div class="footer-partners">
+          <img src="images/footer-usssa-logo-2.png" alt="USSSA Logo" />
+          <img src="images/footer-ndpa-logo.png" alt="NDPA Logo" />
+          <img src="images/footer-member-issa-logo.png" alt="ISSA Logo" />
+          <img src="images/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now Logo" />
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
-</section>
 
-
-
-
-
-<!-- Footer Section -->
-<footer class="custom-footer">
-  <div class="footer-content-overlay">
-    <div class="footer-top">
-      <div class="footer-nav">
-        <a href="#" class="">About</a>
-        <a href="#" class="footer-location">Location</a>
-        <a href="#" class="footer-location">FAQ</a>
-        <a href="#" class="footer-location">Contact</a>
-        <a href="#" class="footer-location">Register/Sign In</a>
-        <a href="#" class="footer-location">Career</a>
-
-        <!-- Spacer between nav and social -->
-        <span class="space-footer"></span>
-
-        <!-- Bootstrap Social Icons -->
-        <span class="footer-social-icons">
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-yelp"></i></a>
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="footer-social-icon-gap"><i class="bi bi-youtube"></i></a>
-        </span>
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- County names and numbers aligned -->
-    <div class="footer-contacts">
-      <div class="county-row">
-        <span class="county-space">Orange County</span>
-        <span class="county-space">San Diego County</span>
-        <span class="county-space">Los Angeles County</span>
-        <span class="county-space">Northern California</span>
-        <span class="county-space">Denver</span>
-      </div>
-      <div class="county-row">
-        <span class="county-space">(949) 450-0777</span>
-        <span class="county-number2">(760) 603-9400</span>
-        <span class="county-number3">(626) 836-1200</span>
-        <span class="county-number4">(408) 279-1700</span>
-        <span class="county-number5">(720) 344-7700</span>
-      </div>
-    </div>
-
-    <!-- Logos -->
-    <div class="footer-partners">
-      <img src="images/footer-usssa-logo-2.png" alt="Logo 1" class="footer-logo-1">
-      <img src="images/footer-ndpa-logo.png" alt="Logo 2">
-      <img src="images/footer-member-issa-logo.png" alt="Logo 3">
-      <img src="images/footer-stop-drowning-now-logo.png" alt="Logo 4">  
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
-  
-
-  </div>
-</footer>
-
-
-
-    </div>
-
-    <script src="script.js"></script>
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
