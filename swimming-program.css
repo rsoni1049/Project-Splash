@@ -104,3 +104,6 @@
     max-width: 400px;
   }
 }
+/* Adult Lap Swimming – page level tweaks */
+.program-content h1{ font-weight:800; color:#133668; }
+.program-content p.lead{ color:#4a4a4a; }

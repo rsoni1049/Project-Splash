@@ -13,22 +13,23 @@
 <body>
   <div class="main-container">
     <!-- Header -->
-    <header class="main-header">
-      <div class="logo-container">
-        <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/home.html">About</a></li>
-            <li><a href="/swimming_lessons.html">Swimming Lessons</a></li>
-            <li><a href="/swimming_programs.html">Swimming Programs</a></li>
-            <li><a href="/adult_programe.html">Adult Programs</a></li>
-            <li><a class="active" href="locations.html">Locations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register/Sign In</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+ <header class="main-header">
+  <div class="logo-container">
+    <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo" />
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">About</a></li>
+        <li><a href="swimming_lessons.html">Swimming Lessons</a></li>
+        <li><a href="swimming_programs.html">Swimming Programs</a></li>
+        <li><a href="adult_programe.html">Adult Programs</a></li>
+        <li><a class="active" href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register / Sign In</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
@@ -49,28 +50,24 @@
               <li><a href="locations/irvine.html">Irvine, CA</a></li>
             </ul>
           </div>
-
           <div class="col-md-4 mb-4">
             <h5>San Diego County</h5>
             <ul class="list-unstyled">
               <li><a href="locations/carlsbad.html">Carlsbad, CA</a></li>
             </ul>
           </div>
-
           <div class="col-md-4 mb-4">
             <h5>Los Angeles County</h5>
             <ul class="list-unstyled">
               <li><a href="locations/pasadena.html">Pasadena, CA</a></li>
             </ul>
           </div>
-
           <div class="col-md-4 mb-4">
             <h5>Northern California</h5>
             <ul class="list-unstyled">
               <li><a href="locations/san-jose.html">San Jose, CA</a></li>
             </ul>
           </div>
-
           <div class="col-md-4 mb-4">
             <h5>Denver</h5>
             <ul class="list-unstyled">
@@ -121,41 +118,29 @@
 
     <!-- Register / Sign In Modal -->
     <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Register / Sign In</h5>
+            <h5 class="modal-title" id="authModalLabel">Register / Sign In</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span>&times;</span>
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <ul class="nav nav-tabs" id="authTabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="signin-tab" data-toggle="tab" href="#signin" role="tab">Sign In</a>
-              </li>
-            </ul>
-            <div class="tab-content mt-3">
-              <div class="tab-pane fade show active" id="register" role="tabpanel">
-                <form>
-                  <input type="text" placeholder="Full Name" class="form-control mb-2" required>
-                  <input type="email" placeholder="Email" class="form-control mb-2" required>
-                  <input type="password" placeholder="Password" class="form-control mb-2" required>
-                  <input type="password" placeholder="Confirm Password" class="form-control mb-3" required>
-                  <button class="btn btn-primary btn-block">Register</button>
-                </form>
+            <form>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
               </div>
-              <div class="tab-pane fade" id="signin" role="tabpanel">
-                <form>
-                  <input type="email" placeholder="Email" class="form-control mb-2" required>
-                  <input type="password" placeholder="Password" class="form-control mb-3" required>
-                  <button class="btn btn-success btn-block">Sign In</button>
-                </form>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
               </div>
-            </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

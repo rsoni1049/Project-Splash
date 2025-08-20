@@ -3,26 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Splashes Swim School</title>
+  <title>Summer Swim Camps | Splashes Swim School</title>
 
-  <!-- Bootstrap 4.6 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
+  <!-- Site styles (same as Home) -->
   <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="swimming-program.css" />
-</head>
 
+  <!-- Vendor -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
 <body>
   <div class="main-container">
-    <!-- Header Section -->
+    <!-- Header (identical to Home) -->
     <header class="main-header">
       <div class="logo-container">
         <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo" />
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Primary">
           <ul>
             <li><a href="home.html">About</a></li>
             <li><a href="swimming_lessons.html">Swimming Lessons</a></li>
@@ -30,32 +26,30 @@
             <li><a href="adult_programe.html">Adult Programs</a></li>
             <li><a href="locations.html">Locations</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li>
-              <a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register/Sign In</a>
-            </li>
+            <li><a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register / Sign In</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <img src="images/summer-swim-camps.jpeg" alt="Children learning to swim with instructor" />
+    <!-- Hero (same structure as Home) -->
+    <section class="hero-section hero-summer">
+      <img src="images/summer-swim-camps.jpeg" alt="Kids at Splashes summer swim camp" />
       <div class="hero-content">
         <h1>Summer Swim Camps</h1>
       </div>
     </section>
 
+    <!-- Content -->
     <section class="lesson-types">
       <div class="container">
         <section class="summer-swim-camps">
-          <div class="container">
-            <h1>Building Swimming Skills All <span>Summer Long</span></h1>
+          <div class="container p-0">
+            <h1 class="text-center mb-4">Building Swimming Skills All <span>Summer Long</span></h1>
 
-            <div class="camp-description">
+            <div class="camp-description mb-4">
               <p>If your child is between the ages of 5 to 14 and can swim two lengths across a 25 yard pool unassisted, consider enrolling them in our summer swim camps. Splashes summer swim camps are held weekly throughout the summer. Discounts are also available for students who enroll in three sessions or more.</p>
-
-              <p>During the day, students will work with our highly qualified instructors on stroke technique, breathing, starts and turns, along with speed work. In the middle of the day, we provide students with a snack and beverage. Swim games will be run during the last 30-45 minutes of each daily session for the children to enjoy our rafts and pool toys.</p>
+              <p>During the day, students will work with our highly qualified instructors on stroke technique, breathing, starts and turns, along with speed work. In the middle of the day, we provide students with a snack and beverage. Swim games will be run during the last 30–45 minutes of each daily session for the children to enjoy our rafts and pool toys.</p>
             </div>
 
             <div class="locations-section">
@@ -72,102 +66,82 @@
             </div>
           </div>
         </section>
+
+        <!-- Register CTA (reuses site button styles) -->
+        <div class="register-cta text-center my-5">
+          <p>Ready to sign up?</p>
+          <a href="#" class="register-btn" data-toggle="modal" data-target="#authModal">REGISTER NOW</a>
+        </div>
       </div>
     </section>
 
-    <!-- Register / Sign In Modal -->
+    <!-- Register / Sign In Modal (same as Home) -->
     <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Register / Sign In</h5>
+            <h5 class="modal-title" id="authModalLabel">Register / Sign In</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span>&times;</span>
+              <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <ul class="nav nav-tabs" id="authTabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="signin-tab" data-toggle="tab" href="#signin" role="tab">Sign In</a>
-              </li>
-            </ul>
-            <div class="tab-content mt-3">
-              <div class="tab-pane fade show active" id="register" role="tabpanel">
-                <form>
-                  <input type="text" placeholder="Full Name" class="form-control mb-2" required />
-                  <input type="email" placeholder="Email" class="form-control mb-2" required />
-                  <input type="password" placeholder="Password" class="form-control mb-2" required />
-                  <input type="password" placeholder="Confirm Password" class="form-control mb-3" required />
-                  <button class="btn btn-primary btn-block">Register</button>
-                </form>
+            <form>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" />
               </div>
-              <div class="tab-pane fade" id="signin" role="tabpanel">
-                <form>
-                  <input type="email" placeholder="Email" class="form-control mb-2" required />
-                  <input type="password" placeholder="Password" class="form-control mb-3" required />
-                  <button class="btn btn-success btn-block">Sign In</button>
-                </form>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" />
               </div>
-            </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer (identical to Home) -->
     <footer class="custom-footer">
       <div class="footer-content-overlay">
         <div class="footer-top">
           <div class="footer-nav">
             <a href="#">About</a>
-            <a href="#" class="footer-location">Location</a>
+            <a href="locations.html" class="footer-location">Location</a>
             <a href="#" class="footer-location">FAQ</a>
-            <a href="#" class="footer-location">Contact</a>
-            <a href="#" class="footer-location">Register/Sign In</a>
+            <a href="contact.html" class="footer-location">Contact</a>
+            <a href="#" class="footer-location" data-toggle="modal" data-target="#authModal">Register/Sign In</a>
             <a href="#" class="footer-location">Career</a>
-
             <span class="space-footer"></span>
-
             <span class="footer-social-icons">
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-yelp"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-yelp"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
             </span>
           </div>
         </div>
-
         <hr />
-
         <div class="footer-contacts">
           <div class="county-row">
-            <span class="county-space">Orange County</span>
-            <span class="county-space">San Diego County</span>
-            <span class="county-space">Los Angeles County</span>
-            <span class="county-space">Northern California</span>
-            <span class="county-space">Denver</span>
+            <span>Orange County</span><span>San Diego County</span><span>Los Angeles County</span><span>Northern California</span><span>Denver</span>
           </div>
           <div class="county-row">
-            <span class="county-space">(949) 450-0777</span>
-            <span class="county-number2">(760) 603-9400</span>
-            <span class="county-number3">(626) 836-1200</span>
-            <span class="county-number4">(408) 279-1700</span>
-            <span class="county-number5">(720) 344-7700</span>
+            <span>(949) 450-0777</span><span>(760) 603-9400</span><span>(626) 836-1200</span><span>(408) 279-1700</span><span>(720) 344-7700</span>
           </div>
         </div>
-
         <div class="footer-partners">
-          <img src="images/footer-usssa-logo-2.png" alt="Logo 1" class="footer-logo-1" />
-          <img src="images/footer-ndpa-logo.png" alt="Logo 2" />
-          <img src="images/footer-member-issa-logo.png" alt="Logo 3" />
-          <img src="images/footer-stop-drowning-now-logo.png" alt="Logo 4" />
+          <img src="images/footer-usssa-logo-2.png" alt="USSSA Logo" />
+          <img src="images/footer-ndpa-logo.png" alt="NDPA Logo" />
+          <img src="images/footer-member-issa-logo.png" alt="ISSA Logo" />
+          <img src="images/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now Logo" />
         </div>
-
         <div class="footer-bottom">
           <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
         </div>
@@ -175,10 +149,7 @@
     </footer>
   </div>
 
-  <!-- Your custom JS -->
-  <script src="script.js"></script>
-
-  <!-- Required JS for Bootstrap Modal -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

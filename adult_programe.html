@@ -3,177 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Splashes Swim School - Adult Lap Swimming</title>
+  <title>Splashes Swim School – Adult Lap Swimming</title>
+
+  <!-- Core styles (same as Home) -->
   <link rel="stylesheet" href="home.css" />
-  <link rel="stylesheet" href="swimming-program.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Page-specific styles (optional; see snippet below) -->
+  <link rel="stylesheet" href="swimming_program.css" />
+
+  <!-- Vendor -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="main-container">
-    <!-- Header -->
-    <header class="main-header">
-      <div class="logo-container">
-        <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo" />
-        <nav class="main-nav">
-          <ul>
-            <li><a href="home.html">About</a></li>
-            <li><a href="swimming_lessons.html">Swimming Lessons</a></li>
-            <li><a href="swimming_programs.html">Swimming Programs</a></li>
-            <li><a href="adult_programe.html">Adult Programs</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register/Sign In</a></li>
-          </ul>
-        </nav>
+  <!-- Full-width header bar, content aligned to 1200px (same as Home) -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="images/logo-small.png" alt="Splashes Swim School Logo" class="logo" />
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="home.html">About</a></li>
+          <li><a href="swimming_lessons.html">Swimming Lessons</a></li>
+          <li><a href="swimming_programs.html">Swimming Programs</a></li>
+          <li><a class="active" href="adult_programe.html">Adult Programs</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <!-- Use same class as Home for consistent pill styling -->
+            <a href="#" class="register-link" data-toggle="modal" data-target="#authModal">Register / Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (same structure as Home: image + overlay + centered title) -->
+  <section class="hero-section">
+    <img src="images/lap-swimming.jpeg" alt="Adult swimming laps in pool" />
+    <div class="hero-content">
+      <h1>Adult Lap Swimming</h1>
+    </div>
+  </section>
+
+  <!-- Main content aligned to same container width as Home -->
+  <main class="program-content">
+    <div class="main-container">
+      <h1 class="mb-3 text-center">Get Fit &amp; Stay Fit With Daily Lap Swimming</h1>
+
+      <div class="program-description">
+        <p class="lead">
+          Adult lap swimming provides a full-body workout that targets the core, arms, back, and legs. It’s also perfect
+          for strength, aerobic, and low-impact training.
+        </p>
+        <p>
+          Looking to improve your routine? Visit a Splashes location to learn more about adult lap swimming.
+          Flexible times are available throughout the week to fit your schedule.
+        </p>
       </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <img src="images/lap-swimming.jpeg" alt="Adult swimming laps in pool" />
-      <div class="hero-content">
-        <h1>Adult Lap Swimming</h1>
-      </div>
-    </section>
+      <section class="program-guidelines mt-4">
+        <h2>Lap Swimming Guidelines</h2>
+        <ul>
+          <li>Each lane accommodates up to two lap swimmers.</li>
+          <li>Children under 14 must be with a parent and able to swim 200 yards unassisted.</li>
+          <li>Lanes may be limited during shared pool usage.</li>
+          <li>No private swim instruction or coaching is permitted.</li>
+          <li>No lifeguard on duty.</li>
+        </ul>
+        <p class="note"><strong>Note:</strong> To reserve an entire lane for yourself, book both A and B slots for the time you want.</p>
+      </section>
 
-    <!-- Main Content -->
-    <section class="program-content">
-      <div class="container">
-        <h1>Get Fit & Stay Fit With Daily Lap Swimming</h1>
-        <div class="program-description">
-          <p>
-            Adult lap swimming provides a full-body workout that targets the core, arms, back, and legs. It also offers access to various training methods, including strength training, aerobic training, and low-impact training.
-          </p>
-          <p>
-            If you're looking to improve your workout routine, visit a Splashes location to learn more about adult lap swimming. Swimmers will find flexible times throughout the week to fit their schedules.
-          </p>
+      <section class="locations-section mt-4">
+        <h2>Find Lap Swimming Near You</h2>
+        <ul class="locations-list">
+          <li><a href="#">Irvine</a></li>
+          <li><a href="#">Carlsbad</a></li>
+          <li><a href="#">Pasadena</a></li>
+          <li><a href="#">San Jose</a></li>
+          <li><a href="#">Denver / Highlands Ranch</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Register / Sign In Modal (same markup as Home) -->
+  <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="authModalLabel">Register / Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-        <div class="program-guidelines">
-          <h2>Lap Swimming Guidelines</h2>
-          <ul>
-            <li>Each lane accommodates up to two lap swimmers</li>
-            <li>Children under 14 must be accompanied by a parent and able to swim 200 yards unassisted</li>
-            <li>Lanes are limited during shared pool usage</li>
-            <li>No private swim instruction or coaching is permitted</li>
-            <li>No lifeguard on duty</li>
-          </ul>
-          <p class="note"><strong>NOTE:</strong> To reserve an entire lane for yourself and avoid sharing, book both A and B slots for your selected time.</p>
-        </div>
-
-        <div class="locations-section">
-          <h2>Find Lap Swimming Near You</h2>
-          <div class="locations-grid">
-            <ul class="locations-list">
-              <li><a href="#">Irvine</a></li>
-              <li><a href="#">Carlsbad</a></li>
-              <li><a href="#">Pasadena</a></li>
-              <li><a href="#">San Jose</a></li>
-              <li><a href="#">Denver/Highlands Ranch</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Register / Sign In Modal -->
-    <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Register / Sign In</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span>&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs" id="authTabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="register-tab" data-toggle="tab" href="#register" role="tab">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="signin-tab" data-toggle="tab" href="#signin" role="tab">Sign In</a>
-              </li>
-            </ul>
-            <div class="tab-content mt-3">
-              <div class="tab-pane fade show active" id="register" role="tabpanel">
-                <form>
-                  <input type="text" placeholder="Full Name" class="form-control mb-2" required />
-                  <input type="email" placeholder="Email" class="form-control mb-2" required />
-                  <input type="password" placeholder="Password" class="form-control mb-2" required />
-                  <input type="password" placeholder="Confirm Password" class="form-control mb-3" required />
-                  <button class="btn btn-primary btn-block">Register</button>
-                </form>
-              </div>
-              <div class="tab-pane fade" id="signin" role="tabpanel">
-                <form>
-                  <input type="email" placeholder="Email" class="form-control mb-2" required />
-                  <input type="password" placeholder="Password" class="form-control mb-3" required />
-                  <button class="btn btn-success btn-block">Sign In</button>
-                </form>
-              </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="custom-footer">
-      <div class="footer-content-overlay">
-        <div class="footer-top">
-          <div class="footer-nav">
-            <a href="#">About</a>
-            <a href="#" class="footer-location">Location</a>
-            <a href="#" class="footer-location">FAQ</a>
-            <a href="#" class="footer-location">Contact</a>
-            <a href="#" class="footer-location">Register/Sign In</a>
-            <a href="#" class="footer-location">Career</a>
-            <span class="space-footer"></span>
-            <span class="footer-social-icons">
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-yelp"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="footer-social-icon-gap"><i class="bi bi-youtube"></i></a>
-            </span>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-contacts">
-          <div class="county-row">
-            <span class="county-space">Orange County</span>
-            <span class="county-space">San Diego County</span>
-            <span class="county-space">Los Angeles County</span>
-            <span class="county-space">Northern California</span>
-            <span class="county-space">Denver</span>
-          </div>
-          <div class="county-row">
-            <span class="county-space">(949) 450-0777</span>
-            <span class="county-number2">(760) 603-9400</span>
-            <span class="county-number3">(626) 836-1200</span>
-            <span class="county-number4">(408) 279-1700</span>
-            <span class="county-number5">(720) 344-7700</span>
-          </div>
-        </div>
-        <div class="footer-partners">
-          <img src="images/footer-usssa-logo-2.png" alt="USSSA Logo" class="footer-logo-1" />
-          <img src="images/footer-ndpa-logo.png" alt="NDPA Logo" />
-          <img src="images/footer-member-issa-logo.png" alt="ISSA Logo" />
-          <img src="images/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now Logo" />
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   </div>
 
-  <!-- JS Scripts -->
-  <script src="script.js"></script>
+  <!-- Footer (identical to Home) -->
+  <footer class="custom-footer">
+    <div class="footer-content-overlay">
+      <div class="footer-top">
+        <div class="footer-nav">
+          <a href="#">About</a>
+          <a href="locations.html" class="footer-location">Location</a>
+          <a href="#" class="footer-location">FAQ</a>
+          <a href="contact.html" class="footer-location">Contact</a>
+          <a href="#" class="footer-location" data-toggle="modal" data-target="#authModal">Register/Sign In</a>
+          <a href="#" class="footer-location">Career</a>
+          <span class="space-footer"></span>
+          <span class="footer-social-icons">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-yelp"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </span>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-contacts">
+        <div class="county-row">
+          <span>Orange County</span><span>San Diego County</span><span>Los Angeles County</span><span>Northern California</span><span>Denver</span>
+        </div>
+        <div class="county-row">
+          <span>(949) 450-0777</span><span>(760) 603-9400</span><span>(626) 836-1200</span><span>(408) 279-1700</span><span>(720) 344-7700</span>
+        </div>
+      </div>
+      <div class="footer-partners">
+        <img src="images/footer-usssa-logo-2.png" alt="USSSA Logo" />
+        <img src="images/footer-ndpa-logo.png" alt="NDPA Logo" />
+        <img src="images/footer-member-issa-logo.png" alt="ISSA Logo" />
+        <img src="images/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now Logo" />
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

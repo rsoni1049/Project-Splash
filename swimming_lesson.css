@@ -1,3 +1,4 @@
+/* ----- LESSON TYPES SECTION ----- */
 .lesson-types {
   padding: 60px 20px;
   background-color: #feffff; /* Light gray background */
@@ -23,10 +24,243 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
-   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .lesson-block a {
   color: #007bff;
   text-decoration: underline;
+}
+
+/* ----- REGISTER CTA SECTION ----- */
+.register-cta-section {
+  background: #f4fafd;
+  padding: 48px 0 32px 0;
+}
+
+.register-cta {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.register-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.register-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #2e9afe;
+  color: #fff !important;
+  border: none;
+  transition: background 0.3s;
+  display: inline-block;
+  box-shadow: 0 2px 12px rgba(46,154,254,0.08);
+}
+.register-btn:hover,
+.register-btn:focus {
+  background-color: #1e7fd7;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* ----- HERO SECTION ----- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #0d4f85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.85;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* ----- MODAL STYLES (Bootstrap handles most) ----- */
+.modal-content {
+  border-radius: 10px;
+}
+.modal-header {
+  border-bottom: 1px solid #e9ecef;
+}
+.modal-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.modal-footer {
+  border-top: 1px solid #e9ecef;
+}
+
+/* ----- NAVIGATION (optional for consistency) ----- */
+.main-header {
+  background: #133668;
+  padding: 0;
+  border-bottom: 2px solid #0d4f85;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px 16px 12px;
+}
+.logo {
+  height: 44px;
+  margin-right: 18px;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.main-nav ul li {
+  margin: 0 10px;
+}
+.main-nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  border-radius: 2px;
+  padding: 4px 12px;
+}
+.main-nav ul li a:hover,
+.main-nav ul li a:focus,
+.main-nav ul li .register-link:focus {
+  color: #2e9afe;
+  background: #e8f3fc;
+  text-decoration: none;
+}
+.register-link {
+  background: #2e9afe;
+  color: #fff !important;
+  border-radius: 2rem;
+  padding: 6px 18px;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.register-link:hover,
+.register-link:focus {
+  background: #1e7fd7;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* ----- FOOTER STYLES (Optional) ----- */
+.custom-footer {
+  background: #133668;
+  color: #eaf6ff;
+  padding-top: 32px;
+  margin-top: 60px;
+  border-top: 2px solid #2e9afe;
+}
+.footer-content-overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.footer-nav a {
+  color: #eaf6ff;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: color 0.2s;
+}
+.footer-nav a:hover,
+.footer-nav a:focus {
+  color: #2e9afe;
+  text-decoration: underline;
+}
+.footer-social-icons a {
+  color: #eaf6ff;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.footer-social-icons a:hover {
+  color: #2e9afe;
+}
+.footer-contacts {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.county-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 4px;
+}
+.footer-partners {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 16px 0 6px 0;
+  flex-wrap: wrap;
+}
+.footer-partners img {
+  height: 32px;
+  width: auto;
+  opacity: 0.93;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #c8e2fc;
+}
+
+/* ----- RESPONSIVE STYLES ----- */
+@media (max-width: 768px) {
+  .hero-section, .hero-section img {
+    height: 180px;
+    min-height: 120px;
+  }
+  .hero-content h1 {
+    font-size: 1.3rem;
+  }
+  .main-header, .footer-content-overlay {
+    padding: 0 6px;
+  }
+  .footer-partners img {
+    height: 22px;
+  }
 }
