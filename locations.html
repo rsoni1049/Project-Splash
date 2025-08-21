@@ -146,57 +146,69 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="custom-footer">
-      <div class="footer-content-overlay">
-        <div class="footer-top">
-          <div class="footer-nav">
-            <a href="#">About</a>
-            <a href="locations.html" class="footer-location">Location</a>
-            <a href="#" class="footer-location">FAQ</a>
-            <a href="#" class="footer-location">Contact</a>
-            <a href="#" class="footer-location">Register/Sign In</a>
-            <a href="#" class="footer-location">Career</a>
-            <span class="space-footer"></span>
-            <span class="footer-social-icons">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-yelp"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-            </span>
-          </div>
-        </div>
-        <hr>
-        <div class="footer-contacts">
-          <div class="county-row">
-            <span class="county-space">Orange County</span>
-            <span class="county-space">San Diego County</span>
-            <span class="county-space">Los Angeles County</span>
-            <span class="county-space">Northern California</span>
-            <span class="county-space">Denver</span>
-          </div>
-          <div class="county-row">
-            <span class="county-space">(949) 450-0777</span>
-            <span class="county-number2">(760) 603-9400</span>
-            <span class="county-number3">(626) 836-1200</span>
-            <span class="county-number4">(408) 279-1700</span>
-            <span class="county-number5">(720) 344-7700</span>
-          </div>
-        </div>
-        <div class="footer-partners">
-          <img src="images/footer-usssa-logo-2.png" alt="Logo 1" class="footer-logo-1">
-          <img src="images/footer-ndpa-logo.png" alt="Logo 2">
-          <img src="images/footer-member-issa-logo.png" alt="Logo 3">
-          <img src="images/footer-stop-drowning-now-logo.png" alt="Logo 4">
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
-        </div>
+<!-- Footer -->
+<footer class="custom-footer">
+  <div class="footer-content-overlay">
+    <div class="footer-top">
+      <div class="footer-nav">
+        <a href="home.html">About</a>
+        <a href="locations.html" class="footer-location">Location</a>
+        <a href="#" class="footer-location">FAQ</a>
+        <a href="contact.html" class="footer-location">Contact</a>
+
+        <!-- Register/Sign In link wired to Bootstrap 4 modal -->
+        <a href="#authModal"
+           class="footer-location footer-auth-link"
+           data-toggle="modal"
+           data-target="#authModal">
+          Register/Sign In
+        </a>
+
+        <a href="#" class="footer-location">Career</a>
+        <span class="space-footer"></span>
+        <span class="footer-social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Yelp"><i class="bi bi-yelp"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </span>
       </div>
-    </footer>
+    </div>
+
+    <hr>
+
+    <div class="footer-contacts">
+      <div class="county-row">
+        <span class="county-space">Orange County</span>
+        <span class="county-space">San Diego County</span>
+        <span class="county-space">Los Angeles County</span>
+        <span class="county-space">Northern California</span>
+        <span class="county-space">Denver</span>
+      </div>
+      <div class="county-row">
+        <span class="county-space">(949) 450-0777</span>
+        <span class="county-number2">(760) 603-9400</span>
+        <span class="county-number3">(626) 836-1200</span>
+        <span class="county-number4">(408) 279-1700</span>
+        <span class="county-number5">(720) 344-7700</span>
+      </div>
+    </div>
+
+    <div class="footer-partners">
+      <img src="images/footer-usssa-logo-2.png" alt="USSSA" class="footer-logo-1">
+      <img src="images/footer-ndpa-logo.png" alt="NDPA">
+      <img src="images/footer-member-issa-logo.png" alt="ISSA">
+      <img src="images/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now">
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Splashes Swim School. All rights reserved.</p>
+    </div>
   </div>
+</footer>
+
 
   <!-- JS Scripts -->
   <script>
